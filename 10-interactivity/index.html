@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,26 +8,139 @@
     <title>Interactivity</title>
   </head>
   <body>
+    <a href="#item" class="border p-3 border-red-500 text-red-500 font-mono"
+      >Scroll smooth to item: scroll added to html</a
+    >
     <!-- Hover State Styling -->
+    <button
+      class="bg-black text-white py-2 px-5 rounded-lg m-3 hover:bg-orange-500"
+    >
+      Hover
+    </button>
 
     <!-- Focus State Styling -->
-
+    <button
+      class="bg-black text-white py-2 px-5 rounded-lg m-3 focus:bg-orange-500"
+    >
+      Focus
+    </button>
     <!-- Active State Styling -->
-
+    <button
+      class="bg-black text-white py-2 px-5 rounded-lg m-3 active:bg-orange-500"
+    >
+      Active
+    </button>
     <!-- Styling based on parent state -->
-
+    <a
+      href=""
+      class="group block max-w-xs max-auto rouded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500"
+      >Styling based on parent
+      <h1 class="group-hover:text-white">Reveal</h1>
+      <button
+        class="group-hover:blur-none bg-orange-500 rounded-sm p-4 blur w-full"
+      >
+        1102 3344 4534 4554
+      </button>
+    </a>
     <!-- Pseudo Classes -->
-
+    <!-- Use case when there is no direct control -->
+    <ul>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-cyan-500">Item 1</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-cyan-500">Item 1</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-cyan-500">Item 1</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-cyan-500">Item 1</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-cyan-500">Item 1</li>
+      <li class="first:bg-red-200 even:bg-green-500 odd:bg-cyan-500">Item 1</li>
+    </ul>
     <!-- Appearance -->
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
-
+    <select name="sel" id="">
+      <option value="yes">
+        yes the arrow looks diffrent in diffrent browsers
+      </option>
+      <option value="no">no</option>
+    </select>
+    <select name="sel" class="appearance-none">
+      <option value="no">
+        no the arrow looks diffrent in diffrent browsers
+      </option>
+      <option value="yes">yes</option>
+    </select>
     <!-- Cursor -->
-
+    <br />
+    <p class="cursor-pointer">Cursor pointer</p>
+    <p class="cursor-wait">Cursor wait</p>
+    <p class="cursor-text">Cursor text</p>
+    <p class="cursor-not-allowed">Cursor not-allowed</p>
+    <p class="cursor-progress">Cursor progress</p>
+    <p class="cursor-cell">Cursor cell</p>
+    <p class="cursor-nwse-resize">Cursor nwse-resize</p>
     <!-- Resize -->
 
     <!-- User Select -->
-
+    <p class="border-1 border-red-500 select-none">
+      select-none Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+    <p class="border-1 border-red-500 select-text">
+      select-text Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+    <p class="border-1 border-red-500 select-all">
+      select-all Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+    <p class="border-1 border-red-500 select-auto">
+      select-auto Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
     <!-- Smooth Scroll Example -->
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+      accusamus animi blanditiis? Eos provident, eius molestiae earum dicta
+      facere, nisi magnam nam accusamus sunt laboriosam, praesentium rerum qui
+      quo quidem.
+      <div class="text-green-700">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+        perspiciatis laboriosam numquam quasi aspernatur tempora sit odit
+        cupiditate sint quia praesentium amet ad, eveniet fuga illo odio, ipsum
+        minima deleniti.
+      </div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+      accusamus animi blanditiis? Eos provident, eius molestiae earum dicta
+      facere, nisi magnam nam accusamus sunt laboriosam, praesentium rerum qui
+      quo quidem.
+      <div class="text-green-700">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+        perspiciatis laboriosam numquam quasi aspernatur tempora sit odit
+        cupiditate sint quia praesentium amet ad, eveniet fuga illo odio, ipsum
+        minima deleniti.
+      </div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+      accusamus animi blanditiis? Eos provident, eius molestiae earum dicta
+      facere, nisi magnam nam accusamus sunt laboriosam, praesentium rerum qui
+      quo quidem.
+      <div class="text-green-700">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+        perspiciatis laboriosam numquam quasi aspernatur tempora sit odit
+        cupiditate sint quia praesentium amet ad, eveniet fuga illo odio, ipsum
+        minima deleniti.
+      </div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+      accusamus animi blanditiis? Eos provident, eius molestiae earum dicta
+      facere, nisi magnam nam accusamus sunt laboriosam, praesentium rerum qui
+      quo quidem.
+      <div class="text-green-700">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+        perspiciatis laboriosam numquam quasi aspernatur tempora sit odit
+        cupiditate sint quia praesentium amet ad, eveniet fuga illo odio, ipsum
+        minima deleniti.
+      </div>
+      <div id="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione
+        molestiae sunt animi ipsam veritatis optio dignissimos, recusandae rerum
+        inventore, asperiores, magni consequuntur cumque esse labore?
+        Consequuntur quasi dolore ducimus, eveniet iusto, harum sapiente rerum
+        necessitatibus impedit recusandae ab consectetur ullam earum commodi
+        dolorum exercitationem beatae velit? Maiores, aperiam beatae?
+      </div>
+    </div>
   </body>
 </html>
 
